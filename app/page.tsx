@@ -65,7 +65,7 @@ export default function WeatherPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6">
             {forecast.map((day, index) => (
-              <ForecastCard key={index} forecast={day} />
+              <ForecastCard key={index} forecast={day} index={index} />
             ))}
           </div>
         </div>
@@ -73,3 +73,4 @@ export default function WeatherPage() {
     </div>
   );
 }
+
